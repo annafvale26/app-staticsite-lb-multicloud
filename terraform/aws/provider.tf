@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "staticsitelbmulticloudtfanna"
+    bucket         = "staticsitelbmulticloudanna"
     key            = "terraform.tfstate"
     dynamodb_table = "staticsitelbmulticloudtfanna"
     region         = "us-east-1"
