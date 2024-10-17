@@ -3,7 +3,7 @@ name: Terraform Multicloud
 on:
   push:
     branches:
-    - main
+    - develop
 
 env:
   TERRAFORM_VERSION  : 1.9.7
@@ -63,4 +63,3 @@ jobs:
     - run: terraform -chdir=./terraform/azure plan -out tfplan
     - run: terraform -chdir=./terraform/azure apply tfplan
     - run: terraform -chdir=./terraform/azure show
-    
